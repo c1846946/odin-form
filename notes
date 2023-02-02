@@ -1,0 +1,7 @@
+finish adding content for invalid inputs
+
+remove valid styling for not required input--have to use placeholder-shown
+
+add pattern for email
+add pattern for password
+validate passwords match using javascript

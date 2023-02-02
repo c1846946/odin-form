@@ -1,0 +1,171 @@
+body {
+    display: flex;
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(250, 247, 247)
+}
+
+.left-half {
+    background-image: url("peng-chen-qd-dvtbS45Q-unsplash.jpeg");
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 40vw;
+    min-width:270px;
+    min-height: 500px;
+}
+
+@font-face {
+    font-family: odinFont;
+    src: url(Norse-Bold.otf);
+}
+
+.brand-container {
+    position: absolute;
+    background-color: rgb(62, 61, 61, 0.5);
+    display: flex;
+    justify-content: center;
+    top: 30%;
+    width: 100%;
+    
+}
+
+.logo img{
+    height: 100px;
+    
+}
+
+.comp-name {
+    font-family: odinFont;
+    font-size: 75px;
+    color: rgb(238, 234, 234);
+    padding-top: 25px;
+    padding-right: 25px;
+}
+
+.tree-attr {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(99, 100, 105, 0.5);
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(213, 220, 226);
+    
+}
+
+.top-right {
+    padding: 20px;
+}
+
+.fname, .lname, .email, .phone, .pwd, .c-pwd {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px 5px 20px;
+}
+
+label {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    border-color: rgb(226, 227, 231);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    position: relative;
+    width: 200px
+}
+
+.user-name, .email-phone, .pass-confirm-pass {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.form-main {
+    padding: 25px;
+    box-shadow: 0px 7px 3px rgb(234, 231, 231);
+    background-color: white;
+    width: 100%;
+}
+
+.form-main > p {
+    margin-top: 0px;
+}
+
+#submit {
+    margin: 30px 45px;
+    padding: 5px 25px 5px 25px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(125,134,44);
+    color:rgb(238, 234, 234)
+}
+
+.log-in {
+    margin-left: 30px;
+}
+
+.log-in a {
+    color: rgb(125,134,44);
+}
+
+input:invalid {
+    border-color: red;
+}
+
+#email:invalid + div:before {
+    content: "example@example.com";
+    color: rgb(244, 78, 56);
+    font-size: 10px;
+    position: absolute;
+}
+
+#email:invalid:placeholder-shown + div:before {
+    content:"";
+}
+
+input:invalid:placeholder-shown + div:before {
+    content:"";
+}
+
+input:valid  {
+    border-color: green;
+}
+
+input:blank {
+    border-color: rgb(226, 227, 231);
+}
+
+input:placeholder-shown {
+    border-color: rgb(226, 227, 231);
+}
+
+input:focus {
+    outline: 2px solid rgb(107, 111, 236);
+    box-shadow:  4px 4px 3px rgb(204, 200, 200);
+}
+
+::placeholder {
+    color: rgb(172, 167, 167);
+    font-size: 12px;
+}
+
+.match-error + div:before {
+    content: "Password fields don't match";
+    color: rgb(244, 59, 30);
+    font-size: 10px;
+    position: absolute;
+}

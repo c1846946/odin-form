@@ -10,29 +10,70 @@
 <body>
     
     <div class="left-half">
-        <div class="brand-container"></div>
-        <div class="tree-attr"><a href='https://pngtree.com/so/oak'>oak png from pngtree.com/</a></div>
+        <div class="brand-container">
+            <div class="logo"><img src="—Pngtree—oak tree logo design_5146112.png" alt="Tree"></div>
+            <div class="comp-name">Treer</div>
+        </div>
+        <div class="tree-attr">
+            <div><a href="https://unsplash.com/">photo by Peng Chen at unsplash.com</a></div>
+            <div><a href='https://pngtree.com/so/oak'>oak png from pngtree.com/</a></div>
+        </div>
     </div>
     
-    <div class="top-right">
-        <p></p>
+    <div class="right-half">
+        <div class="top-right">
+            <p>You can become a tree! Feel the wind through your branches. Experience the four seasons outdoors.
+            Sign up now!</p>
+            <p>
+            Or not. Whatever.
+            </p>
+        </div>
+        
+        <form action="">
+            <div class="form-main">
+                <p>Wooooo!!!!</p>
+                <div class="user-name">
+                    <div class="fname">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="first name" required>
+                    </div>
+                    <div class="lname">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="last name" required>
+                    </div>
+                </div>
+                <div class="email-phone">
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email" required>
+                        <div class="invalid-entry"></div>
+                    </div>
+                    <div class="phone">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="phone number">
+                    </div>
+                </div>
+                <div class="pass-confirm-pass">
+                    <div class="pwd">
+                        <label for="pwd">Password</label>
+                        <input type="password" id="pwd" name="pwd" placeholder="password" required>
+                        <div class="invalid-entry"></div>
+                    </div>
+                    <div class="c-pwd">
+                        <label for="c-pwd">Confirm Password</label>
+                        <input type="password" id="c-pwd" name="c-pwd" placeholder="confirm password" required>
+                        <div class="invalid-entry"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-right">
+                <input type="submit" id="submit" value="Create Account" />
+                <div class="log-in">
+                    Already have an account? <a href="">Log in</a>
+                </div>
+            </div>
+        </form>
     </div>
-    
-    <form action="">
-        <div class="name">
-
-        </div>
-        <div class="email-phone">
-
-        </div>
-        <div class="pass-confirm-pass">
-
-        </div>
-        <div class="bottom-right">
-            <input type="submit" value="Create Account" />
-            <div class="log-in"></div>
-        </div>
-    </form>
-    
+    <script src="app.js"></script>
 </body>
 </html>
